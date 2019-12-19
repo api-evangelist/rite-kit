@@ -1,0 +1,418 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "RiteKit",
+        "description": "RiteKit API is based on REST principles.\n\nAuthentication uses standard OAuth 2.0 process\n\n##Getting started\n\n1. Sign up for [RiteKit](https:\/\/ritekit.com\/)\n\n1. Go to [developer dashboard](https:\/\/ritekit.com\/developer\/dashboard\/)\n\n1. Click \"Create a token\" button to get your **Client ID** and **Client secret**\n\n1. Study the documentation below (for more info on oAuth go to http:\/\/oauth.net\/)\n\n1. When you reach your free limit of calls per month, [upgrade to paid tiers](https:\/\/ritekit.com\/developer\/)\n\n## Options for authorizing API Calls\n\n#### A) Using Client ID directly\n\nYou can directly connect to our API using your **client ID** by sending it as a GET query parameter. This option is simple (no need for oAuth) but it should be used only in case the Client ID is not exposed publicly.\n\nGET  https:\/\/api.ritekit.com\/v1\/stats\/multiple-hashtags?tags=php&client_id=292c6912e7710c838347ae178b4a\n\n#### B) Using Access token (oAuth 2.0)\n\nOnce you have valid Access token, you can access our API b",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.ritekit.com\/"
+    ],
+    "paths": {
+        "\/v1\/emoji\/auto-emojify": {
+            "get": {
+                "summary": "Auto-Emojify",
+                "description": "Returns text of the post with emoji added",
+                "operationId": "V1EmojiAutoEmojifyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "Text of the post"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/emoji\/suggestions": {
+            "get": {
+                "summary": "Emoji Suggestions",
+                "description": "Returns list of emoji suggestions for a given text of the post",
+                "operationId": "V1EmojiSuggestionsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "Text of the post"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/images\/animate": {
+            "get": {
+                "summary": "Animate Image",
+                "description": "Returns URL of an animated GIF.",
+                "operationId": "V1ImagesAnimateGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL of the company"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "URL of the company"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/images\/logo": {
+            "get": {
+                "summary": "Company Logo",
+                "description": "Returns a company logo based on website domain. If the logo is not in our database yet, it will be extracted from the site on the fly. White logo background is automatically removed to make the logo look better on color backgrounds.",
+                "operationId": "V1ImagesLogoGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "description": "URL of the company"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/images\/quote": {
+            "get": {
+                "summary": "Text to Image",
+                "description": "Returns URL of an image created from text according to given style parameters",
+                "operationId": "V1ImagesQuoteGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "quote",
+                        "in": "query",
+                        "description": "Text of the quote"
+                    },
+                    {
+                        "name": "author",
+                        "in": "query",
+                        "description": "Name of the author\/source"
+                    },
+                    {
+                        "name": "fontSize",
+                        "in": "query",
+                        "description": "Font size for the quote (author font size is calculated automatically)"
+                    },
+                    {
+                        "name": "quoteFont",
+                        "in": "query",
+                        "description": "Font-family used for quote text"
+                    },
+                    {
+                        "name": "quoteFontColor",
+                        "in": "query",
+                        "description": "Font color of the quote text"
+                    },
+                    {
+                        "name": "authorFont",
+                        "in": "query",
+                        "description": "Font-family used for author name"
+                    },
+                    {
+                        "name": "authorFontColor",
+                        "in": "query",
+                        "description": "Font color of the author"
+                    },
+                    {
+                        "name": "enableHighlight",
+                        "in": "query",
+                        "description": "Enable highlight on quote text"
+                    },
+                    {
+                        "name": "highlightColor",
+                        "in": "query",
+                        "description": "Color used for highlight"
+                    },
+                    {
+                        "name": "bgType",
+                        "in": "query",
+                        "description": "Background type (gradient\/solid)"
+                    },
+                    {
+                        "name": "backgroundColor",
+                        "in": "query",
+                        "description": "Background color for solid background type"
+                    },
+                    {
+                        "name": "gradientType",
+                        "in": "query",
+                        "description": "Type of gradient background (linear\/radial)"
+                    },
+                    {
+                        "name": "gradientColor1",
+                        "in": "query",
+                        "description": "First color for gradient background type"
+                    },
+                    {
+                        "name": "gradientColor2",
+                        "in": "query",
+                        "description": "Second color for gradient background type"
+                    },
+                    {
+                        "name": "brandLogo",
+                        "in": "query",
+                        "description": "URL of the brand logo"
+                    },
+                    {
+                        "name": "animation",
+                        "in": "query",
+                        "description": "Animation type: none, rays, glint, circle"
+                    },
+                    {
+                        "name": "showQuoteMark",
+                        "in": "query",
+                        "description": "showing\/hiding quote mark"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/influencers\/hashtag\/{hashtag}": {
+            "get": {
+                "summary": "Influencers for a Hashtag",
+                "description": "Returns list of Twitter influencers for a given hashtag",
+                "operationId": "V1InfluencersHashtagHashtagGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "hashtag",
+                        "in": "path",
+                        "description": "Hashtag without # mark"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/link\/cta": {
+            "get": {
+                "summary": "List of CTAs",
+                "description": "Returns list of available CTA for current user. Requires each user to authenticate with RiteKit",
+                "operationId": "V1LinkCtaGet",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/link\/short-link": {
+            "get": {
+                "summary": "Shorten Link",
+                "description": "Returns a shorten link with a given CTA.",
+                "operationId": "V1LinkShortLinkGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL of the company"
+                    },
+                    {
+                        "name": "cta",
+                        "in": "query",
+                        "description": "cta id"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/search\/trending": {
+            "get": {
+                "summary": "Trending Hashtags",
+                "description": "Returns list of hashtags currently trending on Twitter",
+                "operationId": "V1SearchTrendingGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "green",
+                        "in": "query",
+                        "description": "Restrict results only to green hashtags. Hides overused (red) hashtags."
+                    },
+                    {
+                        "name": "latin",
+                        "in": "query",
+                        "description": "Restrict results only to hashtags with latin characters"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/stats\/auto-hashtag": {
+            "get": {
+                "summary": "Auto-Hashtag",
+                "description": "Returns auto-hashtagged text of the post.",
+                "operationId": "V1StatsAutoHashtagGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "query",
+                        "description": "Text of the post"
+                    },
+                    {
+                        "name": "maxHashtags",
+                        "in": "query",
+                        "description": "Max number of hashtags."
+                    },
+                    {
+                        "name": "hashtagPosition",
+                        "in": "query",
+                        "description": "Position of hashtags: end => at the end, auto => anywhere"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/stats\/hashtag-suggestions": {
+            "get": {
+                "summary": "Hashtag Suggestions",
+                "description": "Returns list of hashtag suggestions for a single-word topic or a shorter text up to 1000 characters. Takes into account both semantic relevancy and real-time hashtag popularity.",
+                "operationId": "V1StatsHashtagSuggestionsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "text",
+                        "in": "query",
+                        "description": "Text of the post"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/stats\/history\/{hashtag}": {
+            "get": {
+                "summary": "Hashtag History",
+                "description": "Returns historical stats for a given hashtag from the last 30 days",
+                "operationId": "V1StatsHistoryHashtagGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "hashtag",
+                        "in": "path",
+                        "description": "Hashtag without # mark"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v1\/stats\/multiple-hashtags": {
+            "get": {
+                "summary": "Hashtag Stats",
+                "description": "Returns real-time stats for up to 100 hashtags (updated hourly).",
+                "operationId": "V1StatsMultipleHashtagsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Hashtag(s) without # mark"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/v2\/instagram\/hashtags-cleaner": {
+            "get": {
+                "summary": "Hashtags cleaner",
+                "description": "Remove banned hashtags before posting to Instagram",
+                "operationId": "V2InstagramHashtagsCleanerGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "query",
+                        "description": "Text of the post"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Emojis": {
+                "type": "object"
+            },
+            "Hashtags": {
+                "type": "object"
+            },
+            "Images": {
+                "type": "object"
+            },
+            "Influencers": {
+                "type": "object"
+            },
+            "Instagram": {
+                "type": "object"
+            },
+            "Link_shortening": {
+                "type": "object"
+            },
+            "tags": {
+                "type": "array"
+            }
+        }
+    }
+}
