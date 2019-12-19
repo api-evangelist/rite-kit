@@ -1,0 +1,89 @@
+{
+    "name": "Rite Kit",
+    "description": "",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/ritekit-logo.png",
+    "tags": [
+        "general data",
+        "have api",
+        "have swagger",
+        "links",
+        "new",
+        "profile",
+        "relative data",
+        "service api",
+        "social"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/rite-kit\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "RiteKit",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/ritekit-logo.png",
+            "humanURL": "http:\/\/ritekit.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ritekit.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ritekit-openapi.json"
+                }
+            ]
+        },
+        {
+            "name": "Rite Kit",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/ritekit-logo.png",
+            "humanURL": "http:\/\/ritekit.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/rite-kit.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/rite-kit-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/blog.ritekit.com\/"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/ritekit.docs.apiary.io\/#"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/RiteKit"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28494-2019-09-04-01-30-53.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28494-2019-09-04-03-26-04.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/RiteTag"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/ritekit.com"
+        }
+    ]
+}
