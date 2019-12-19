@@ -1,0 +1,527 @@
+{
+    "id": "0bb7d4393809aaa24f712ae5f463fda1",
+    "name": "Rite Kit",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b3e0b1140d80444d382b36374dd23f2e",
+            "name": "Auto-Emojify",
+            "url": "httpsapi.ritekit.com\/\/v1\/emoji\/auto-emojify",
+            "description": "Returns text of the post with emoji added",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "text",
+                    "description": "Text of the post",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "3aa05f5119891a72520756db93746735",
+            "name": "Emoji Suggestions",
+            "url": "httpsapi.ritekit.com\/\/v1\/emoji\/suggestions",
+            "description": "Returns list of emoji suggestions for a given text of the post",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "text",
+                    "description": "Text of the post",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "dd986dc0309632c18c17eafec0556680",
+            "name": "Animate Image",
+            "url": "httpsapi.ritekit.com\/\/v1\/images\/animate",
+            "description": "Returns URL of an animated GIF.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "url",
+                    "description": "URL of the company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "URL of the company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "eee29d3a350c19d3bca71955aae2b36f",
+            "name": "Company Logo",
+            "url": "httpsapi.ritekit.com\/\/v1\/images\/logo",
+            "description": "Returns a company logo based on website domain. If the logo is not in our database yet, it will be extracted from the site on the fly. White logo background is automatically removed to make the logo look better on color backgrounds.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "domain",
+                    "description": "URL of the company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "0501b718e9cae4c5e36d65f2524318df",
+            "name": "Text to Image",
+            "url": "httpsapi.ritekit.com\/\/v1\/images\/quote",
+            "description": "Returns URL of an image created from text according to given style parameters",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "quote",
+                    "description": "Text of the quote",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "author",
+                    "description": "Name of the author\/source",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fontSize",
+                    "description": "Font size for the quote (author font size is calculated automatically)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "quoteFont",
+                    "description": "Font-family used for quote text",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "quoteFontColor",
+                    "description": "Font color of the quote text",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "authorFont",
+                    "description": "Font-family used for author name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "authorFontColor",
+                    "description": "Font color of the author",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enableHighlight",
+                    "description": "Enable highlight on quote text",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "highlightColor",
+                    "description": "Color used for highlight",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bgType",
+                    "description": "Background type (gradient\/solid)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "backgroundColor",
+                    "description": "Background color for solid background type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gradientType",
+                    "description": "Type of gradient background (linear\/radial)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gradientColor1",
+                    "description": "First color for gradient background type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gradientColor2",
+                    "description": "Second color for gradient background type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "brandLogo",
+                    "description": "URL of the brand logo",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "a95fe8b4835dd3ab1a1b491de09ff75b",
+            "name": "Influencers for a Hashtag",
+            "url": "httpsapi.ritekit.com\/\/v1\/influencers\/hashtag\/{hashtag}",
+            "description": "Returns list of Twitter influencers for a given hashtag",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "hashtag",
+                    "description": "Hashtag without # mark",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b2207d6d9748878bef5a669b57b06db",
+            "name": "List of CTAs",
+            "url": "httpsapi.ritekit.com\/\/v1\/link\/cta",
+            "description": "Returns list of available CTA for current user. Requires each user to authenticate with RiteKit",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6f1d24ba0dac829992c741ba9de57fd5",
+            "name": "Shorten Link",
+            "url": "httpsapi.ritekit.com\/\/v1\/link\/short-link",
+            "description": "Returns a shorten link with a given CTA.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "url",
+                    "description": "URL of the company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "cta",
+                    "description": "cta id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4595550ff3b6052857a6d17f54a1c89",
+            "name": "Trending Hashtags",
+            "url": "httpsapi.ritekit.com\/\/v1\/search\/trending",
+            "description": "Returns list of hashtags currently trending on Twitter",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "green",
+                    "description": "Restrict results only to green hashtags. Hides overused (red) hashtags.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "latin",
+                    "description": "Restrict results only to hashtags with latin characters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc23ddfa9f80969c8720f26a82b0a66d",
+            "name": "Auto-Hashtag",
+            "url": "httpsapi.ritekit.com\/\/v1\/stats\/auto-hashtag?post={post}",
+            "description": "Returns auto-hashtagged text of the post.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "post",
+                    "description": "Text of the post",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "bcc6af9a7ea93759425c7c8c7e2ef5ee",
+            "name": "Hashtag Suggestions",
+            "url": "httpsapi.ritekit.com\/\/v1\/stats\/hashtag-suggestions\/{topic}",
+            "description": "Returns list of hashtag suggestions and their real-time stats for a given topic",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "topic",
+                    "description": "Topic",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "21ae1e04db3ac11664143b845b7262f6",
+            "name": "Hashtag History",
+            "url": "httpsapi.ritekit.com\/\/v1\/stats\/history\/{hashtag}",
+            "description": "Returns historical stats for a given hashtag from the last 30 days",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "hashtag",
+                    "description": "Hashtag without # mark",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        },
+        {
+            "id": "772e6cd2f23a5cae9504edc7e1b5ed55",
+            "name": "Hashtag Stats",
+            "url": "httpsapi.ritekit.com\/\/v1\/stats\/multiple-hashtags",
+            "description": "Returns real-time stats for up to 100 hashtags (updated hourly).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tags",
+                    "description": "Hashtag(s) without # mark",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0bb7d4393809aaa24f712ae5f463fda1",
+            "rawModeData": ""
+        }
+    ]
+}
