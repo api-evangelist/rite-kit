@@ -1,5 +1,5 @@
 {
-    "id": "b1929c79fc51c08f7dd1128e16f210ee",
+    "id": "026274a858eb4970bffeb6d3a0da310a",
     "name": "RiteKit",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "6dd11afbdb5e4a98609af57ccadd2480",
+            "id": "ea6eadcda05603942a8ebf91a320647a",
             "name": "Auto-Emojify",
             "url": "http:\/\/api.ritekit.com\/\/v1\/emoji\/auto-emojify",
             "description": "Returns text of the post with emoji added",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "bb98fa60733a0991c9b1945a57a8a938",
+            "id": "3534815cad35d62eca6a80330f143fa7",
             "name": "Emoji Suggestions",
             "url": "http:\/\/api.ritekit.com\/\/v1\/emoji\/suggestions",
             "description": "Returns list of emoji suggestions for a given text of the post",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "2f32b079109c31daa85b550595bfe901",
+            "id": "220cfb4c1fe133208529a500ce682d6e",
             "name": "Animate Image",
             "url": "http:\/\/api.ritekit.com\/\/v1\/images\/animate",
             "description": "Returns URL of an animated GIF.",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "d1416fd8ce2c20afd1ba731df5564c9a",
+            "id": "376a2c96faddb40ea082e7833acba7ef",
             "name": "Company Logo",
             "url": "http:\/\/api.ritekit.com\/\/v1\/images\/logo",
             "description": "Returns a company logo based on website domain. If the logo is not in our database yet, it will be extracted from the site on the fly. White logo background is automatically removed to make the logo look better on color backgrounds.",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "5a4343acf8832eefc08f3280c17a375c",
+            "id": "4223424e149fc798571597e88ae92e5e",
             "name": "Text to Image",
             "url": "http:\/\/api.ritekit.com\/\/v1\/images\/quote",
             "description": "Returns URL of an image created from text according to given style parameters",
@@ -280,11 +280,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "b0a6ceccda45606ec7df96193fa34609",
+            "id": "81820b1fcdc445266becf829f223c3c3",
             "name": "Influencers for a Hashtag",
             "url": "http:\/\/api.ritekit.com\/\/v1\/influencers\/hashtag\/{hashtag}",
             "description": "Returns list of Twitter influencers for a given hashtag",
@@ -311,11 +311,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "6277e0cf580f0f8e59e8a0d55f9b6369",
+            "id": "732ac56af87924adf3223d8365fc127a",
             "name": "List of CTAs",
             "url": "http:\/\/api.ritekit.com\/\/v1\/link\/cta",
             "description": "Returns list of available CTA for current user. Requires each user to authenticate with RiteKit",
@@ -334,11 +334,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "7cf1f6b8895302523da8bfd5019caa4b",
+            "id": "55f2187b416ef97b3d9fe72ff44037b9",
             "name": "Shorten Link",
             "url": "http:\/\/api.ritekit.com\/\/v1\/link\/short-link",
             "description": "Returns a shorten link with a given CTA.",
@@ -372,11 +372,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "d3233f8c8b0045cc1247ea6b28ede483",
+            "id": "1d9abfc9bb3fb99ad4bfc6389c1c628a",
             "name": "Trending Hashtags",
             "url": "http:\/\/api.ritekit.com\/\/v1\/search\/trending",
             "description": "Returns list of hashtags currently trending on Twitter",
@@ -410,11 +410,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "3697f27174d75b3c305547fbf89ce557",
+            "id": "4100f038e09e4eab7b1acb09d894f4cb",
             "name": "Auto-Hashtag",
             "url": "http:\/\/api.ritekit.com\/\/v1\/stats\/auto-hashtag",
             "description": "Returns auto-hashtagged text of the post.",
@@ -455,11 +455,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "57275c21f5c729cad132f23148340eef",
+            "id": "52b3d500a91bab272573b0852d366f40",
             "name": "Hashtag Suggestions",
             "url": "http:\/\/api.ritekit.com\/\/v1\/stats\/hashtag-suggestions",
             "description": "Returns list of hashtag suggestions for a single-word topic or a shorter text up to 1000 characters. Takes into account both semantic relevancy and real-time hashtag popularity.",
@@ -486,11 +486,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "e6a6672b86f31eac3de19209a88e351f",
+            "id": "4dfd76747309066c2d3f7d63c17ccdcc",
             "name": "Hashtag History",
             "url": "http:\/\/api.ritekit.com\/\/v1\/stats\/history\/{hashtag}",
             "description": "Returns historical stats for a given hashtag from the last 30 days",
@@ -517,11 +517,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "f9950e11afad6c7a4159d622a83c1bdb",
+            "id": "87256acd1818f242f3b0d7a2da070df9",
             "name": "Hashtag Stats",
             "url": "http:\/\/api.ritekit.com\/\/v1\/stats\/multiple-hashtags",
             "description": "Returns real-time stats for up to 100 hashtags (updated hourly).",
@@ -548,11 +548,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         },
         {
-            "id": "7cc87ce60982db571fa4ab38a33ec61b",
+            "id": "7de0988a5208c2e9ed38d127b3042005",
             "name": "Hashtags cleaner",
             "url": "http:\/\/api.ritekit.com\/\/v2\/instagram\/hashtags-cleaner",
             "description": "Remove banned hashtags before posting to Instagram",
@@ -579,7 +579,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b1929c79fc51c08f7dd1128e16f210ee",
+            "collectionId": "026274a858eb4970bffeb6d3a0da310a",
             "rawModeData": ""
         }
     ]
